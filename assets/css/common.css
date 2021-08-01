@@ -938,6 +938,47 @@ button.swiper-pagination-bullet {
   footer .copy {
     margin-top: 10px;
   }
+  .side_nav {
+    display: none;
+  }
+}
+
+@media (max-width: 1199px) {
+  .side_nav {
+    width: 100%;
+    right: -100%;
+    display: block;
+    color: #fff;
+    position: fixed;
+    background: #fff;
+    height: 100%;
+    top: 12.80193vw;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    z-index: 100;
+  }
+  .side_nav.menu_open {
+    transform: translate(-100%, 0);
+    -webkit-transform: translate(-100%, 0);
+    display: block;
+  }
+  .side_nav .__mobile_closed {
+    display: block;
+    right: 3.62319vw;
+    top: 3.62319vw;
+    border: 0 none;
+    background: transparent;
+    cursor: pointer;
+    position: absolute;
+    width: 5.7971vw;
+    background: url(../img/ico_cross.svg) no-repeat 0 0/cover;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1305,6 +1346,18 @@ button.swiper-pagination-bullet {
     color: #1c67e7;
     padding-right: 21px;
     background: url(../img/ico_link.svg) no-repeat 100% 50%/13px;
+  }
+  .main .__cont .our_best_fairs li button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    z-index: 2;
+    background: rgba(29, 29, 29, 0.35) url(../img/ico_share.svg) no-repeat 50% 50%/14px;
+    -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
   }
   .main .__cont .btn_more {
     display: block;

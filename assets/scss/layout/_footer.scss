@@ -38,10 +38,47 @@
             margin-top: 10px;
         }
     }
+    .side_nav {
+        display: none;
+    }
 }
 
 @include mobile {
     footer {
 
     }
+    .side_nav {
+        width: 100%;
+        right: -100%;
+        display: block;
+        color: #fff;
+        position: fixed;
+        background: #fff;
+        height: 100%;
+        top: vw(53);
+        transform: translate(0, 0);
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        z-index: 100;
+        &.menu_open {
+            transform: translate(-100%, 0);
+            -webkit-transform: translate(-100%, 0);
+            display: block; 
+        }
+        .__mobile_closed {
+            display: block;
+            right: vw(15);
+            top: vw(15);
+            border: 0 none;
+            background: transparent;
+            cursor: pointer;
+            position: absolute;
+            width: vw(24);
+            background: url(../img/ico_cross.svg) no-repeat 0 0 / cover;
+        }
+    }   
 }

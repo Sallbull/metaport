@@ -38,8 +38,6 @@ $(function () {
         // $(this).removeClass('on');
         $(this).stop().slideUp();
     })
-
-    
     
     if ($('.__top.swiper-container').length) {
         var swiper = new Swiper(".__top.swiper-container", {
@@ -56,6 +54,7 @@ $(function () {
             // },
             pagination: {
                 el: '.__top .swiper-pagination',
+                clickable: true,
             },
         });
         $('.__top .start').off().on('click', function(){
@@ -135,9 +134,20 @@ $(function () {
         } else {
             $(this).addClass('active');
         }
-        
-
     });
+
+    /* mobile */
+    // mobile menu
+    function mmenuClose() {
+        $('body').removeClass('__open');
+        $('.side_nav').removeClass('__open');
+        $('.bg-dimmed').hide();
+    }
+    function mmenuOpen() {
+        $('body').addClass('__open');
+        $('.side_nav').addClass('__open');
+        $('.bg-dimmed').show();
+    }
 
 });
 
