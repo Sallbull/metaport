@@ -1,6 +1,5 @@
 @include desktop {
     .sub {
-
         .__account {
             width:837px;            
             margin:121px auto;
@@ -127,5 +126,135 @@
 }
 
 @include mobile {
+    .sub {
+        .__account {
+            width: 100%;
+            padding:0 vw(20);
+            margin:vw(50) auto;
+            
+            .__change_list {
+                padding:0;
+                margin:0 0 vw(50);
+                li {
+                    margin-bottom: vw(37);
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+                label {
+                    color:#a3a3a3;
+                    font-weight: 700;
+                    margin-left: vw(16);
+                    font-size: vw(14);
+                }
+                div {
+                    margin-top: vw(9);
+                    display: flex;                    
+                    justify-content: space-between;
+                    align-items: center;
+                    input {
+                        display: flex;
+                        align-items: center;
+                        font-size: vw(14);
+                        width: calc(100% - 22vw);
+                        border: 0 solid #000;
+                        padding-left: vw(16);
+                        height: vw(48);
+                        border-bottom: 1px solid  #a3a3a3;;
+                    }
+                    .__change {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color:#1262ea;
+                        font-weight: 700;
+                        width: vw(76);
+                        height: vw(48);
+                        border-radius: 3px;
+                        border: solid 1px #1262ea;
+                    }
+                }
+            }
 
+            .__additional_list {
+                padding: vw(40) 0 0;
+                border-top: 1px solid #e5e5e5;
+                li {
+                    margin-bottom: vw(30);
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+                label {
+                    color:#a3a3a3;
+                    font-weight: 700;
+                    margin-left: vw(16);
+                    font-size: vw(14);
+                }
+                div {
+                    margin-top: vw(16);
+                    input {
+                        font-size: vw(14);
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        border: 0 solid #000;
+                        padding-left: vw(16);
+                        height: vw(48);
+                        border-radius: 3px;
+                        border: 1px solid  #a3a3a3;;
+                    }
+                    textarea {
+                        width: 100%;
+                        min-height: vw(78);
+                        padding:vw(14) vw(26) vw(14) vw(16);
+                        border-radius: 3px;
+                        border: 1px solid  #a3a3a3;
+                        resize: vertical;
+                        font-size: vw(14);
+                    }
+                    .__change {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color:#1262ea;
+                        font-weight: 700;
+                        width: vw(76);
+                        height: vw(48);
+                        border-radius: 3px;
+                        border: solid 1px #1262ea;
+                    }
+                }
+                .__sns {
+                    margin:vw(15) 0 vw(24);
+                    padding-left: vw(16);
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    b {
+                        font-weight: 700;
+                        font-size: vw(14);
+                    }
+                    input {
+                        width: calc(100% - 22vw);
+                    }
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            .__save {
+                display: block;
+                width: 100%;
+                height: vw(48);
+                margin: vw(70) auto 0;
+                font-size: vw(16);
+                font-weight: 700;
+                background-color: #1d1d1d ;
+                border-radius: 3px;
+                color:#fff;
+            }
+        }
+    }
 }

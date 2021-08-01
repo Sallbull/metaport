@@ -20,10 +20,10 @@ $(function () {
 	});
 
     $("#btnMobile").off().on('click',function(){
-        $('.side_nav').addClass('open');
+        mmenuOpen();
     });
     $("#btnClosed").off().on('click',function(){
-        $('.side_nav').removeClass('open');
+        mmenuClose();
     });
 
     $('nav .__txt').mouseenter( function() {
@@ -88,7 +88,6 @@ $(function () {
             tg.addClass('yearly');
         }
     });
-
 
     $('.__pricing_plan .__select').on('click',function(){
         $('.__pricing_plan .__select').removeClass('on');
