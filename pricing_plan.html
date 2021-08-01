@@ -1,0 +1,83 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("layout/header.html");  //헤더 인클루드
+        $("#footers").load("layout/footer.html");  //푸터부분 인클루드
+    });
+</script>
+
+<div data-include-path="layout/header.html" id="headers"></div>
+
+<main class="sub">
+    <section class="__top __pricing">
+        <div class="pricing_top">
+            <p class="t1">요금제</p>
+            <p class="t2">Ready to start <br>with Planeye?</p>
+            <div class="btn_box">
+                <button class="btn on">Monthly</button>
+                <button class="btn">Yearly</button>
+            </div>
+        </div>
+    </section>
+    <section class="__cont __pricing_plan">
+        <div class="plan_box">
+            <h2>무료</h2>
+            <p class="t1">Starter</p>
+            <p class="price_txt">
+                <b class="count">$0원</b>
+                <span class="unit">/월</span>
+            </p>
+            <ul class="guide_list">
+                <li>10 fairs</li>
+                <li>1 user</li>
+            </ul>
+            <button class="btn __select">Get Started</button>
+            <ul class="explan_list">
+                <li>Download photos and videos</li>
+                <li>Take measurements</li>
+                <li>View in Cloud privately</li>
+                <li>One user administrator</li>
+            </ul>
+        </div>
+        <div class="plan_box">
+            <h2>프로 <span>Most Popular</span></h2>
+            <p class="t1">Better Results</p>
+            <p class="price_txt">
+                <b class="count">$3만원</b>
+                <span class="unit">/월</span>
+            </p>
+            <ul class="guide_list">
+                <li>50 fairs</li>
+                <li>8 user</li>
+            </ul>
+            <button class="btn __select on">Choose plan</button>
+            <ul class="explan_list">
+                <li>Download photos and videos</li>
+                <li>Take measurements</li>
+                <li>Basic Space traffic analytics</li>
+                <li>Account administration</li>
+            </ul>
+        </div>
+        <div class="plan_box">
+            <h2>비즈니스</h2>
+            <p class="t1">Go all in</p>
+            <p class="price_txt">
+                <b class="count">$10만원</b>
+                <span class="unit">/월</span>
+            </p>
+            <ul class="guide_list">
+                <li>Unlimited fairs</li>
+                <li>15+ users</li>
+            </ul>
+            <button class="btn __select">Contact us</button>
+            <ul class="explan_list">
+                <li>Large team collaboration</li>
+                <li>Account administration</li>
+                <li>Advanced Space traffic analytics</li>
+                <li>Multiple users administrators</li>
+            </ul>
+        </div>
+    </section>
+</main>
+
+<div data-include-path="layout/footer.html" id="footers"></div>

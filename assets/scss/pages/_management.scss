@@ -1,0 +1,131 @@
+@include desktop {
+    .sub {
+
+        .__account {
+            width:837px;            
+            margin:121px auto;
+            
+            .__change_list {
+                padding:0 190px;
+                margin:0 0 96px;
+                li {
+                    margin-bottom: 37px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+                label {
+                    color:#a3a3a3;
+                    font-weight: 700;
+                    margin-left: 16px;
+                }
+                div {
+                    margin-top: 9px;
+                    display: flex;                    
+                    justify-content: space-between;
+                    align-items: center;
+                    input {
+                        display: flex;
+                        align-items: center;
+                        width: calc(100% - 92px);
+                        border: 0 solid #000;
+                        padding-left: 16px;
+                        height: 48px;
+                        border-bottom: 1px solid  #a3a3a3;;
+                    }
+                    .__change {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color:#1262ea;
+                        font-weight: 700;
+                        width: 76px;
+                        height: 48px;
+                        border-radius: 3px;
+                        border: solid 1px #1262ea;
+                    }
+                }
+            }
+
+            .__additional_list {
+                padding: 83px 190px 0;
+                border-top: 1px solid #e5e5e5;
+                li {
+                    margin-bottom: 30px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+                label {
+                    color:#a3a3a3;
+                    font-weight: 700;
+                    margin-left: 16px;
+                }
+                div {
+                    margin-top: 16px;
+                    input {
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        border: 0 solid #000;
+                        padding-left: 16px;
+                        height: 48px;
+                        border-radius: 3px;
+                        border: 1px solid  #a3a3a3;;
+                    }
+                    textarea {
+                        width: 100%;
+                        min-height: 78px;
+                        padding:14px 26px 14px 16px;
+                        border-radius: 3px;
+                        border: 1px solid  #a3a3a3;
+                        resize: vertical;
+                    }
+                    .__change {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color:#1262ea;
+                        font-weight: 700;
+                        width: 76px;
+                        height: 48px;
+                        border-radius: 3px;
+                        border: solid 1px #1262ea;
+                    }
+                }
+                .__sns {
+                    margin:15px 0 24px;
+                    padding-left: 16px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    b {
+                        font-weight: 700;
+                    }
+                    input {
+                        width: 325px;
+                    }
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            .__save {
+                display: block;
+                width: 485px;
+                height: 48px;
+                margin: 70px auto 0;
+                font-size: 16px;
+                font-weight: 700;
+                background-color: #1d1d1d ;
+                border-radius: 3px;
+                color:#fff;
+            }
+        }
+    }
+}
+
+@include mobile {
+
+}

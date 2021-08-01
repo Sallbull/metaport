@@ -1,0 +1,66 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("layout/header.html");  //헤더 인클루드
+        $("#footers").load("layout/footer.html");  //푸터부분 인클루드
+    });
+</script>
+
+<div data-include-path="layout/header.html" id="headers"></div>
+
+<main class="sub">
+    <section class="__top">
+        <h1>전시관 관리</h1>
+    </section>
+    <section class="__cont __product">
+        <article class="__loc">
+            <a href="#a">상품관리</a>
+            <a href="#a">상품 등록</a>
+            <a href="#a">목록으로</a>
+            <b>전시관 관리</b>
+        </article>
+        <div class="__product_editor">
+            <ul class="__editor_list">
+                <li>
+                    <label>전시 이름</label>
+                    <div>
+                        <input type="text">
+                    </div>
+                </li>
+                <li>
+                    <label>메타포트 ID</label>
+                    <div>
+                        <input type="text">
+                    </div>
+                </li>
+                <li>
+                    <label>전시관 URL</label>
+                    <div>
+                        <input type="text">
+                    </div>
+                </li>                
+                <li>
+                    <label>전시관 소개</label>
+                    <div>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </li>
+                <li>
+                    <label>업체정보</label>
+                    <div class="check_box">
+                        <input type="checkbox" class="checkbox" id="l1">
+                        <label for="l1">기존정보 가져오기</label>
+                    </div>
+                    <div>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </li>
+            </ul>
+            <div class="btn_wrap">
+                <button class="btn __full">저장</button>
+            </div>
+        </div>        
+    </section>
+</main>
+
+<div data-include-path="layout/footer.html" id="footers"></div>

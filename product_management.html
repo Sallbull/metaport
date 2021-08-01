@@ -1,0 +1,86 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("layout/header.html");  //헤더 인클루드
+        $("#footers").load("layout/footer.html");  //푸터부분 인클루드
+    });
+</script>
+
+<div data-include-path="layout/header.html" id="headers"></div>
+
+<main class="sub">
+    <section class="__top">
+        <h1>상품관리</h1>
+        <a href="#a" class="btn __add">상품등록</a>
+    </section>
+    <section class="__cont __product">
+        <article class="search_wrap">
+            <select name="" id="" class="cus_select">
+                <option value="">전시관선택</option>
+            </select>
+            <input type="text" class="input" placeholder="상품검색">
+            <button class="btn __search">검색</button>
+        </article>
+        <ul class="product_list">
+            <li>
+                <div class="img_box">
+                    <img src="assets/img/@img_product_01.png" alt="">                    
+                </div>
+                <p class="p_name">Barbarian Sofa/Sleeper</p>
+                <p class="p_price">$190,000 원</p>
+                <button class="btn __editor"></button>
+            </li>
+            <li>
+                <div class="img_box">
+                    <img src="assets/img/@img_product_01.png" alt="">                    
+                </div>
+                <p class="p_name">Barbarian Sofa/Sleeper</p>
+                <p class="p_price">$190,000 원</p>
+                <button class="btn __editor"></button>
+            </li>
+            <li>
+                <div class="img_box">
+                    <img src="assets/img/@img_product_01.png" alt="">                    
+                </div>
+                <p class="p_name">Barbarian Sofa/Sleeper</p>
+                <p class="p_price">$190,000 원</p>
+                <button class="btn __editor"></button>
+            </li>
+            <li>
+                <div class="img_box">
+                    <img src="assets/img/@img_product_01.png" alt="">                    
+                </div>
+                <p class="p_name">Barbarian Sofa/Sleeper</p>
+                <p class="p_price">$190,000 원</p>
+                <button class="btn __editor"></button>
+            </li>
+            <li>
+                <div class="img_box">
+                    <img src="assets/img/@img_product_01.png" alt="">                    
+                </div>
+                <p class="p_name">Barbarian Sofa/Sleeper</p>
+                <p class="p_price">$190,000 원</p>
+                <button class="btn __editor"></button>
+            </li>
+            <li>
+                <div class="img_box">
+                    <img src="assets/img/@img_product_01.png" alt="">                    
+                </div>
+                <p class="p_name">Barbarian Sofa/Sleeper</p>
+                <p class="p_price">$190,000 원</p>
+                <button class="btn __editor"></button>
+            </li>
+        </ul>
+        <div class="paging">
+            <a href="#a" class="__btn __prev"></a>
+            <a href="#a" class="__no on">1</a>
+            <a href="#a" class="__no">2</a>
+            <a href="#a" class="__no">3</a>
+            <a href="#a" class="__no">4</a>
+            <a href="#a" class="__no">5</a>
+            <a href="#a" class="__btn __next"></a>
+        </div>
+    </section>
+</main>
+
+<div data-include-path="layout/footer.html" id="footers"></div>

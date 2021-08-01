@@ -1,0 +1,143 @@
+@include desktop {
+    .tour {
+        width: 1273px;
+        margin:0 auto;
+        .tour_exhibition {
+            position: relative;
+            .btn_wrap {
+                overflow: hidden;
+                position: absolute;
+                right:0;
+                top:50%;
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+                transform: translateY(-50%);
+                box-shadow:-2px 2px 8px rgba(0, 0, 0, 0.1);
+                .btn {
+                    display: flex;
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 0;
+                    &.__zoom {  
+                        border-bottom: 1px solid #e5e5e5;
+                        background:#fff url(../img/ico_telephone.svg) no-repeat 50% / 24px;
+                    }
+                    &.__chat {
+                        background:#fff url(../img/ico_chat.svg) no-repeat 50% / 24px;
+                    }
+                }
+            }
+        }
+        .txt_wrap {
+            padding:27px 43px 43px;
+            h1 {
+                font-size: 22px;
+                font-weight: 700;                
+            }
+            .txt {
+                margin-top: 23px;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+        .tour_btm {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height:64px;
+            padding:0 64px 0 43px;
+            background: #1262ea;
+            .__link {
+                color:#fff;
+                padding-right: 22px;
+                text-decoration: underline;
+                background: url(../img/ico_link_white.svg) no-repeat 100% 50% / 14px;
+            }
+            > div {
+                display: flex;
+                align-items: center;
+                a {
+                    display: inline-block;
+                    padding:6px;
+
+                }
+                p {
+                    font-size: 10px;
+                    padding-left: 23px;
+                    color:#fff;
+                }
+            }
+        }
+        .tour_pro_list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding:33px 40px;
+            li {
+                position: relative;
+                width: 218px;
+                margin-top: 30px;
+                img {
+                    width: 100%;
+                }
+                &::before {
+                    z-index: 1;
+                    position: absolute;
+                    left: 0;
+                    top:0;
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 22.48%);
+                }
+                &:nth-child(-n + 5) {
+                    margin-top: 0;
+                }
+                button {
+                    position: absolute;
+                    right:10px;
+                    top:10px;
+                    width: 22px;
+                    height: 22px;
+                    border-radius: 100%;
+                    z-index: 2;
+                    background: rgba(29, 29, 29, 0.35) url(../img/ico_share.svg) no-repeat 50% 50% / 14px;
+                    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+                }
+                .txt_box {
+                    position: absolute;
+                    bottom:8px;
+                    left:0;
+                    z-index: 2;
+                    padding-left: 15px;
+
+                    .p_name {
+                        font-weight: 600;                        
+                        margin-bottom: 8px;
+                    }
+                    .p_price {
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &.__more {
+                width: 211px;
+                height: 48px;
+                margin: 64px auto;
+                border: 1px solid #C4C4C4;
+                color: #C4C4C4;
+            }
+        }
+    }
+}
+
+@include mobile {
+
+}

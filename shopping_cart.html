@@ -1,0 +1,97 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("layout/header.html");  //헤더 인클루드
+        $("#footers").load("layout/footer.html");  //푸터부분 인클루드
+    });
+</script>
+
+<div data-include-path="layout/header.html" id="headers"></div>
+
+<main class="sub">
+    <section class="__top">
+        <h1>카트</h1>
+    </section>
+    <section class="__cont __shopping">
+        <h2>장바구니입니다.</h2>
+        <div class="cart_wrap">
+            <div class="card add_cart">
+                <table>
+                    <colgroup>
+                        <col class="c1">
+                        <col class="c2">
+                        <col class="c3">
+                        <col class="c4">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th class="t_left">상품비용</th>
+                            <th>상품가격</th>
+                            <th>주문금액</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="assets/img/@img_cart_01.png" alt="">
+                            </td>
+                            <td>
+                                <div class="p_option">
+                                    <p class="p_name">Mia Coffee Table</p>
+                                    <div class="plus_minus">
+                                        <button class="btn __minus"></button>
+                                        <input type="text" value="1">
+                                        <button class="btn __plus"></button>
+                                    </div>
+                                    <a href="#a" class="btn __option">옵션변경</a>
+                                </div>
+                            </td>
+                            <td>140,000 원</td>
+                            <td>280,000 원</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="assets/img/@img_cart_02.png" alt="">
+                            </td>
+                            <td>
+                                <div class="p_option">
+                                    <p class="p_name">Geometric Vasel gradient grey</p>
+                                    <div class="plus_minus">
+                                        <button class="btn __minus"></button>
+                                        <input type="text" value="1">
+                                        <button class="btn __plus"></button>
+                                    </div>
+                                    <a href="#a" class="btn __option">옵션변경</a>
+                                </div>
+                            </td>
+                            <td>69,000 원</td>
+                            <td>69,000 원</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+            
+            <div class="card result_cart">
+                <div class="price_box">
+                    <dl>
+                        <dt>상품비용</dt>
+                        <dd>349,000 원</dd>
+                    </dl>
+                    <dl>
+                        <dt>배송비용</dt>
+                        <dd>2,5000 원</dd>
+                    </dl>
+                    <dl class="__total">
+                        <dt>총 비용</dt>
+                        <dd>351,500 원</dd>
+                    </dl>
+                </div>
+                <button type="button" class="btn __buy">구매하기</button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<div data-include-path="layout/footer.html" id="footers"></div>

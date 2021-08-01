@@ -1,0 +1,100 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("layout/header.html");  //헤더 인클루드
+        $("#footers").load("layout/footer.html");  //푸터부분 인클루드
+    });
+</script>
+
+<div data-include-path="layout/header.html" id="headers"></div>
+
+<main class="main">
+    <div class="__top swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="assets/img/img_main_01.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/img_main_01.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/img_main_01.png" alt="">
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-option">            
+            <button class="start"><img src="assets/img/ico_play.png" alt="start"></button>
+            <button class="stop"><img src="assets/img/ico_pause.svg" alt="stop"></button>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- Add Arrows -->
+        <!-- <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div> -->
+        <div class="txt_box">
+            <p class="t1">
+                The best 3D <br>experience <br>for your business
+            </p>
+            <p class="t2">
+                Turn any space into a walk in <br>virtual experience and elevate <br>your business
+            </p>
+        </div>
+    </div>
+    <div class="__cont">
+        <h2>How it works</h2>
+        <ul class="work_list">
+            <li>
+                <p>마치 현장에 있는 것처럼 <br>가상 전시공간을 구경하세요!</p>
+            </li>
+            <li>
+                <p>가상 전시 공간에서 구매하고 <br>싶은 제품을 선택하세요</p>
+            </li>
+            <li>
+                <p>마치 현장에 있는 것처럼 <br>가상 전시공간을 구경하세요!</p>
+            </li>
+        </ul>
+
+        <h2>Our best Fairs</h2>
+        <ul class="our_best_fairs">
+            <li>
+                <img src="assets/img/img_our_01.png" alt="">
+                <button type="button"></button>
+                <p class="tit">삼성 갤럭시 전시관</p>
+                <a href="#a">삼성 갤럭시  홈페이지 이동</a>
+            </li>
+            <li>
+                <img src="assets/img/img_our_02.png" alt="">
+                <button type="button"></button>
+                <p class="tit">LG 가전제품 전시관</p>
+                <a href="#a">LG 가전제품 홈페이지 이동 </a>
+            </li>
+            <li>
+                <img src="assets/img/img_our_03.png" alt="">
+                <button type="button"></button>
+                <p class="tit">이케아 오피스 가구 전시관</p>
+                <a href="#a">이케아 오피스 가구 홈페이지 이동</a>
+            </li>
+            <li>
+                <img src="assets/img/img_our_04.png" alt="">
+                <button type="button"></button>
+                <p class="tit">삼성 갤럭시 전시관</p>
+                <a href="#a">삼성 갤럭시  ​홈페이지 이동</a>
+            </li>
+            <li>
+                <img src="assets/img/img_our_05.png" alt="">
+                <button type="button"></button>
+                <p class="tit">LG 가전제품 전시관</p>
+                <a href="#a">LG 가전제품 홈페이지 이동 </a>
+            </li>
+            <li>
+                <img src="assets/img/img_our_06.png" alt="">
+                <button type="button"></button>
+                <p class="tit">이케아 오피스 가구 전시관</p>
+                <a href="#a">이케아 오피스 가구 홈페이지 이동</a>
+            </li>
+        </ul>
+        <button class="btn btn_more">더보기</button>
+    </div>
+    
+</main>
+
+<div data-include-path="layout/footer.html" id="footers"></div>

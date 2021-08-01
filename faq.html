@@ -1,0 +1,63 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("layout/header.html");  //헤더 인클루드
+        $("#footers").load("layout/footer.html");  //푸터부분 인클루드
+    });
+</script>
+
+<div data-include-path="layout/header.html" id="headers"></div>
+
+<main class="sub">
+    <section class="__top">
+        <h1>Service Center</h1>
+    </section>
+    <section class="__cont __faq">
+        <div class="faq_movie">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/img/@img_faq.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/@img_faq.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/@img_faq.png" alt="">
+                    </div>
+                </div>
+            </div>            
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        
+        <h2>Frequently Asked Questions</h2>
+        <p class="stit">Top Account Questions</p>
+
+        <ul class="qna_list">
+            <li>
+                <p class="q">메타포트 아이디가 필요한가요?</p>
+                <div class="a">
+                    네 기본 기능으로 사용 시 매터포트 아이디가 별도로 필요합니다.
+                </div>
+            </li>
+            <li>
+                <p class="q">3D 스튜디오를 활용한 전시는요? </p>
+                <div class="a">
+                    네 기본 기능으로 사용 시 매터포트 아이디가 별도로 필요합니다.
+                </div>
+            </li>
+            <li>
+                <p class="q">3D 스튜디오를 활용한 전시는요? </p>
+                <div class="a">
+                    네 기본 기능으로 사용 시 매터포트 아이디가 별도로 필요합니다.
+                </div>
+            </li>
+        </ul>
+        <h3>Still have a question?</h3>
+        <p class="txt">If you cannot find the answer to your question in our FAQ, you can always contact us. <br class="">We will answer to your shortly!</p>
+    </section>
+</main>
+
+<div data-include-path="layout/footer.html" id="footers"></div>

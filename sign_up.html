@@ -1,0 +1,56 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("layout/header.html");  //헤더 인클루드
+        $("#footers").load("layout/footer.html");  //푸터부분 인클루드
+    });
+</script>
+
+<div data-include-path="layout/header.html" id="headers"></div>
+
+<main class="sub">
+    <article class="__loc">
+        <a href="#a">홈</a>
+        <b>회원가입</b>
+    </article>
+    <section class="__cont __form">
+        <h1>회원가입</h1>
+        <ul class="__form_list">
+            <li>
+                <input type="text" class="input" placeholder="아이디 (이메일)">
+            </li>
+            <li>
+                <input type="password" class="input pw" placeholder="비밀번호">
+                <i class="btn_pw"></i>
+            </li>   
+            <li>
+                <input type="password" class="input pw" placeholder="비밀번호 확인">
+                <i class="btn_pw"></i>
+            </li>   
+        </ul>
+        <ul class="__form_list">
+            <li>
+                <input type="text" class="input" placeholder="닉네임">
+            </li>  
+            <li>
+                <input type="text" class="input" placeholder="전화번호">
+            </li>  
+            <li>
+                <select name="" id="" class="cus_select">
+                    <option value="">유저 선택</option>
+                </select>
+            </li>
+        </ul>
+        <div class="check_box">
+            <input type="checkbox" class="checkbox" id="l1">
+            <label for="l1">이용약관 (<a href="#a">보기</a>)</label>            
+        </div>
+        <div class="check_box">
+            <input type="checkbox" class="checkbox" id="l1">
+            <label for="l1">개인정보취급방침 (<a href="#a">보기</a>)</label>            
+        </div>
+        <button class="btn">회원가입</button>
+    </section>
+</main>
+
+<div data-include-path="layout/footer.html" id="footers"></div>

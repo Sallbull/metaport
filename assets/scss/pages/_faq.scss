@@ -1,0 +1,112 @@
+@include desktop {
+    .__faq {
+        width: 1025px;
+        margin:96px auto;
+        .faq_movie {
+            width: 100%;
+            height: 463px;
+            position: relative;
+            margin-bottom: 72px;
+            .swiper-slide {
+                img {
+                    width: 100%;
+                }
+            }
+            .swiper-button-next {
+                right: -81px;
+                left: auto;
+                background: url(../img/ico_right_btn.svg) no-repeat 0 0 / cover;
+            }
+            .swiper-button-prev {
+                right: auto;
+                left: -81px;
+                background: url(../img/ico_left_btn.svg) no-repeat 0 0 / cover;
+            }
+            .swiper-button-next, 
+            .swiper-button-prev {
+                position: absolute;
+                top: 50%;
+                width: 40px;
+                height: 40px;
+                margin-top: -20px;
+                z-index: 10;
+                cursor: pointer;
+            }        
+            .swiper-button-next:after, 
+            .swiper-button-prev:after {
+                display: none;
+            }
+        }
+
+        h2 {
+            font-size: 32px;
+            font-weight: 700;
+        }
+        .stit {
+            margin-top: 16px;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .qna_list {
+            margin:35px 0 90px;
+            border-top: 1px solid #e5e5e5;
+            li {
+                border-bottom: 1px solid #e5e5e5;
+                .q {
+                    position: relative;
+                    padding:35px 0 36px 120px;
+                    cursor: pointer;
+                    background: url(../img/ico_arrow_down.svg) no-repeat right 23px top 50% / 28px;
+                    &.on {
+                        background: url(../img/ico_arrow_up.svg) no-repeat right 23px top 50% / 28px;
+                    }
+                    &::before {
+                        content:'Q';
+                        display: inline;
+                        font-size: 18px;
+                        font-weight: 700;
+                        color: #1262ea;
+                        position: absolute;
+                        left: 24px;
+                        top:48%;
+                        transform: translateY(-50%);
+                    }
+                }
+                .a {
+                    position: relative;
+                    display: none;
+                    padding:42px 0 42px 120px;
+                    background-color: #f8f8f8;                    
+                    &.on {
+                        display: flex;
+                    }
+                    &::before {
+                        content: 'A';
+                        display: inline;
+                        font-size: 18px;
+                        font-weight: 700;
+                        color: rgba(253, 124, 136, 0.5);
+                        position: absolute;
+                        left: 24px;
+                        top:48%;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+        }
+
+        h3 {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        p.txt {
+            margin-top: 26px;
+            font-size: 16px;
+        }
+    }
+}
+
+@include mobile {
+    
+}

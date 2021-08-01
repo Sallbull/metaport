@@ -1,0 +1,49 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("layout/header.html");  //헤더 인클루드
+        $("#footers").load("layout/footer.html");  //푸터부분 인클루드
+    });
+</script>
+
+<div data-include-path="layout/header.html" id="headers"></div>
+
+<main class="sub">
+    <section class="__top">
+        <h1>계정관리</h1>
+    </section>
+    <section class="__cont __account">
+        <ul class="__change_list">
+            <li>
+                <label>닉네임</label>
+                <div>
+                    <input type="text" value="Gingerles">
+                    <button class="btn __change">변경</button>
+                </div>
+            </li>
+            <li>
+                <label>전화번호</label>
+                <div>
+                    <input type="text" value="01099223157">
+                    <button class="btn __change">변경</button>
+                </div>
+            </li>
+            <li>
+                <label>이메일 주소</label>
+                <div>
+                    <input type="text" value="gingerels@gmail.com">
+                    <button class="btn __change">변경</button>
+                </div>
+            </li>
+            <li>
+                <label>비밀번호</label>
+                <div>
+                    <input type="password" value="23235235">
+                    <button class="btn __change">변경</button>
+                </div>
+            </li>
+        </ul>
+    </section>
+</main>
+
+<div data-include-path="layout/footer.html" id="footers"></div>

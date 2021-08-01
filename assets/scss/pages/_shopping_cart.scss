@@ -1,0 +1,117 @@
+@include desktop {
+    .sub {
+        .__shopping {
+            padding-bottom: 119px;
+            h2 {
+                font-size: 32px;
+                margin:45px 0 32px 124px; 
+            }
+
+            .cart_wrap {
+                display: flex;
+                justify-content: space-between;
+                align-items:flex-start;
+                padding:0 40px;
+            }
+            .add_cart {
+                width: 785px;
+                padding:32px;
+                table {
+                    th {
+                        padding:0 0 15px;
+                        &.t_left {
+                            text-align: left;
+                            padding-left: 76px;
+                        }
+                    }
+                    td {
+                        padding:15px 0;
+                        text-align: center;
+                        font-weight: 700;
+                        vertical-align: top;
+                    }
+                    .c1 { width: 13%; }
+                    .c2 { width: 47%; }
+                    .c3 { width: 20%; }
+                    .c4 { width: 20%; }
+                    .p_option {
+                        text-align: left;                        
+                        padding-left: 50px;
+                        font-weight: 400;
+                        .p_name {
+                            font-weight: 700;
+                        }
+                        .plus_minus {
+                            margin:15px 0;
+                            display: flex;
+                            button {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                text-align: center;
+                                width: 27px;
+                                height: 27px;
+                                background: rgba(245, 245, 245, .8);
+                                &.__minus {
+                                    background: rgba(245, 245, 245, .8) url(../img/ico_minus.svg) no-repeat 50% 50% / 6px;
+                                }
+                                &.__plus {
+                                background: rgba(245, 245, 245, .8) url(../img/ico_plus.svg) no-repeat 50% 50% / 8px;
+                                }
+                            }
+                            input {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                text-align: center;
+                                font-weight: 600;
+                                width: 27px;
+                                height: 27px;
+                                border: 1px solid rgba(18, 98, 234,.8);
+                            }
+
+                        }
+                        .__option {
+                            color:#1d1d1d;
+                            text-decoration: underline;
+
+                        }
+                    }
+                }
+            }
+            .result_cart {
+                width: 375px;
+                padding:32px 24px 50px;
+                
+                .__buy {
+                    width: 100%;
+                    height: 36px;
+                    border-radius: 3px;
+                    background-color: #1d1d1d;
+                    color:#fff;
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+                .price_box {
+                    dl {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 16px;
+                        dd {
+                            font-weight: 700;
+                        }
+                        &.__total {
+                            font-size: 24px;
+                            margin:44px 0 60px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include mobile {
+
+}
