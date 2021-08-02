@@ -1,41 +1,48 @@
 @include desktop {
     footer {
         background-color: #f5f5f5;
-        padding:56px 40px 44px;
-        .footer_logo {
-            font-size: 20px;
-            font-weight: 700;
+        .inner_mobile {
+            display: none;
         }
-        > div {
-            display: flex;
-            margin-top: 18px;
-            dl {
-                margin-right: 140px;
-                &:last-child {
-                    margin-right: 0;
-                }
-                dt {
-                    display: inline-block;
-                    color:#1262ea;
-                    padding-right: 12px;
-                    margin-bottom: 14px;
-                    background: url(../img/ico_blue_arrow.svg) no-repeat 100% 50% / 4px;
-                }
-                dd {
-                    display: block;
-                    margin-bottom: 10px;
+        .inner_pc {
+            width: 1273px;
+            margin:0 auto;
+            padding:56px 40px 44px;
+            .footer_logo {
+                font-size: 20px;
+                font-weight: 700;
+            }
+            > div {
+                display: flex;
+                margin-top: 18px;
+                dl {
+                    margin-right: 140px;
                     &:last-child {
-                        margin-bottom: 0;
+                        margin-right: 0;
                     }
-                    a {
-                        color:#1262EA;
-                        text-decoration: underline;
+                    dt {
+                        display: inline-block;
+                        color:#1262ea;
+                        padding-right: 12px;
+                        margin-bottom: 14px;
+                        background: url(../img/ico_blue_arrow.svg) no-repeat 100% 50% / 4px;
                     }
-                }                
-            }            
-        }
-        .copy {
-            margin-top: 10px;
+                    dd {
+                        display: block;
+                        margin-bottom: 10px;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                        a {
+                            color:#1262EA;
+                            text-decoration: underline;
+                        }
+                    }                
+                }            
+            }
+            .copy {
+                margin-top: 10px;
+            }
         }
     }
     .side_nav {
@@ -45,7 +52,38 @@
 
 @include mobile {
     footer {
-
+        background-color: #f5f5f5;
+        padding:vw(34) 0 vw(24);
+        .inner_pc {
+            display: none;
+        }
+        .inner_mobile {
+            display: block;
+            text-align: center;
+            font-size: vw(14);
+            color: #a3a3a3;
+            line-height: vw(19);
+            font-weight: 400;
+            p {
+                a {
+                    color:#1262EA;
+                    text-decoration: underline;
+                }    
+            }
+            
+            div {
+                margin-top: vw(33);
+                display: flex;
+                justify-content: center;
+                a {
+                    color:#A3A3A3;
+                    font-weight: 600;
+                    padding-right: vw(16);
+                    margin:0 vw(20);
+                    background: url(../img/ico_gray_arrow.svg) no-repeat 100% 50% / vw(7);
+                }
+            }
+        }
     }
     .side_nav {
         width: 100%;
@@ -55,7 +93,7 @@
         position: fixed;
         background: #fff;
         height: 100%;
-        top: vw(53);
+        top: 0;
         transform: translate(0, 0);
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
@@ -64,7 +102,7 @@
         -moz-transition: all 0.5s ease;
         -o-transition: all 0.5s ease;
         z-index: 100;
-        &.menu_open {
+        &.__open {
             transform: translate(-100%, 0);
             -webkit-transform: translate(-100%, 0);
             display: block; 
@@ -77,8 +115,34 @@
             background: transparent;
             cursor: pointer;
             position: absolute;
+            z-index: 10;
             width: vw(24);
+            height: vw(24);
             background: url(../img/ico_cross.svg) no-repeat 0 0 / cover;
+        }
+        .mobile_menu {
+            padding: vw(50);
+            height: 100vh;
+            position: relative;
+            li {
+                margin-bottom: vw(20);
+                &.logout {
+                    position: absolute;
+                    left:vw(50);
+                    bottom:vw(50);
+                }
+            }
+            a {
+                display: block;
+                color:#1d1d1d;
+                font-size: vw(16);
+                margin-bottom: vw(5);
+            }
+            .tit {
+                font-size: vw(20);
+                font-weight: 700;
+                margin-bottom: vw(10);
+            }
         }
     }   
 }

@@ -104,9 +104,117 @@
             }
         }
     }
-    
 }
 
 @include mobile {
+    .__form {
+        margin:vw(40) auto;
+        width: 100%;
+        padding:0 vw(20);
+        h1 {
+            font-size: vw(32);
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 72px;
+            & + .stit {
+                font-size: vw(14);
+                margin:-13px 0 20px;    
+            }
+            & + .stit2 {
+                font-size: vw(14);
+                margin:-45px 0 57px;    
+                text-align: center;
+            }
+        }
+        .btn {
+            width: 100%;
+            height: vw(48);            
+            margin-top: vw(50);
+            font-size: vw(16);
+            border-radius: 3px;
+            background-color: #1d1d1d;
+            color:#fff;
+        }
+        .link_wrap {
+            margin-top: vw(24);
+            border-top: 1px solid #E5E5E5;
+            padding-top: vw(18);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a {
+                position: relative;
+                display: inline-flex;
+                align-items: center;
+                font-weight: 700;
+                color:#A3A3A3;
+                height: vw(26);
+                padding:0 vw(30);
+                font-size: vw(14);
+                &:last-child {
+                    color:#1262EA;
+                    &::after {
+                        display: none;
+                    }
+                }
+                &::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    right:0;
+                    top:0;
+                    width: 1px;
+                    height: vw(26);
+                    background: #E5E5E5;
+                    
+                }
+            }
+        }
+        .__form_list {
+            &:nth-of-type(2) {
+                margin-top: vw(30);
+                padding-top: vw(30);
+                border-top: 1px solid #E5E5E5;
+            }
+            li {
+                width: 100%;
+                position: relative;
+                margin-bottom: 18px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                .input {
+                    width: 100%;
+                    font-weight: 700;
+                    &::placeholder {
+                        color:#a3a3a3;
+                    }
+                }
+                .btn_pw {
+                    position: absolute;
+                    right:vw(16);
+                    top:vw(17);
+                }  
+                .ico_ok {
+                    position: absolute;
+                    right:vw(18);
+                    top:vw(14);
+                }
+                .txt_vali {
+                    font-size: vw(14);
+                    color:#00c853;
+                    margin:8px 0 0 16px;
+                }
 
+            }
+        }
+        .check_box {
+            margin:vw(16) 0;
+            label {
+                color:#a3a3a3;
+                font-weight: 700;
+                font-size: vw(14);
+            }
+        }
+    }
 }

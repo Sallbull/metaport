@@ -1,6 +1,8 @@
 @include desktop {
     .sub {
         .__shopping {
+            width: 1273px;
+            margin:0 auto;
             padding-bottom: 119px;
             h2 {
                 font-size: 32px;
@@ -113,5 +115,119 @@
 }
 
 @include mobile {
+    .sub {
+        .__shopping {
+            width: 100%;
+            margin:0 auto;
+            padding-bottom: vw(50);
+            h2 {
+                font-size: vw(16);
+                margin:vw(20); 
+            }
 
+            .cart_wrap {
+                padding:0 vw(20);
+            }
+            .add_cart {
+                width: 100%;
+                padding:vw(16);
+                table {
+                    font-size: vw(14);
+                    th {
+                        padding:0 0 vw(10);
+                        &.t_left {
+                            text-align: left;
+                            padding-left: vw(15);
+                        }
+                    }
+                    td {
+                        padding:vw(10) 0;
+                        text-align: center;
+                        font-weight: 700;
+                        vertical-align: top;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    .c1 { width: 10%; }
+                    .c2 { width: 50%; }
+                    .c3 { width: 20%; }
+                    .c4 { width: 20%; }
+                    .p_option {
+                        text-align: left;                        
+                        padding-left: vw(15);
+                        font-weight: 400;
+                        .p_name {
+                            font-weight: 700;
+                        }
+                        .plus_minus {
+                            margin:15px 0;
+                            display: flex;
+                            button {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                text-align: center;
+                                width: 27px;
+                                height: 27px;
+                                background: rgba(245, 245, 245, .8);
+                                &.__minus {
+                                    background: rgba(245, 245, 245, .8) url(../img/ico_minus.svg) no-repeat 50% 50% / 6px;
+                                }
+                                &.__plus {
+                                background: rgba(245, 245, 245, .8) url(../img/ico_plus.svg) no-repeat 50% 50% / 8px;
+                                }
+                            }
+                            input {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                text-align: center;
+                                font-weight: 600;
+                                width: 27px;
+                                height: 27px;
+                                border: 1px solid rgba(18, 98, 234,.8);
+                            }
+
+                        }
+                        .__option {
+                            color:#1d1d1d;
+                            text-decoration: underline;
+
+                        }
+                    }
+                }
+            }
+            .result_cart {
+                margin-top: vw(30);
+                width: 100%;
+                padding:vw(20);
+                
+                .__buy {
+                    width: 100%;
+                    height: vw(36);
+                    border-radius: 3px;
+                    background-color: #1d1d1d;
+                    color:#fff;
+                    font-size: vw(14);
+                    font-weight: 700;
+                }
+                .price_box {
+                    dl {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: vw(8);
+                        dd {
+                            font-weight: 700;
+                        }
+                        &.__total {
+                            font-size: vw(18);
+                            margin:vw(20) 0 vw(30);
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

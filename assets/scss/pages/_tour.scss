@@ -2,6 +2,9 @@
     .tour {
         width: 1273px;
         margin:0 auto;
+        .mobile_txt {
+            display: none;
+        }
         .tour_exhibition {
             position: relative;
             .btn_wrap {
@@ -42,13 +45,14 @@
         }
         .tour_btm {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
             align-items: center;
             width: 100%;
             height:64px;
             padding:0 64px 0 43px;
             background: #1262ea;
             .__link {
+                margin-right: auto;
                 color:#fff;
                 padding-right: 22px;
                 text-decoration: underline;
@@ -60,13 +64,12 @@
                 a {
                     display: inline-block;
                     padding:6px;
-
                 }
-                p {
-                    font-size: 10px;
-                    padding-left: 23px;
-                    color:#fff;
-                }
+            }
+            p {
+                font-size: 10px;
+                padding-left: 23px;
+                color:#fff;
             }
         }
         .tour_pro_list {
@@ -139,5 +142,151 @@
 }
 
 @include mobile {
-
+    .tour {
+        width: 100%;
+        .mobile_txt {
+            display: block;
+            font-size: vw(29);
+            font-weight: 700;
+            padding:vw(21) vw(24) vw(18);
+        }
+        .tour_exhibition {
+            position: relative;
+            height: vw(195);
+            img {
+                width: 100%;
+            }
+            .btn_wrap {
+                overflow: hidden;
+                position: absolute;
+                right:0;
+                top:50%;
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+                transform: translateY(-50%);
+                box-shadow:-2px 2px 8px rgba(0, 0, 0, 0.1);
+                .btn {
+                    display: flex;
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 0;
+                    &.__zoom {  
+                        border-bottom: 1px solid #e5e5e5;
+                        background:#fff url(../img/ico_telephone.svg) no-repeat 50% / 24px;
+                    }
+                    &.__chat {
+                        background:#fff url(../img/ico_chat.svg) no-repeat 50% / 24px;
+                    }
+                }
+            }
+        }
+        .txt_wrap {
+            padding:vw(16) vw(20) vw(28);
+            h1 {
+                font-size: vw(18);
+                font-weight: 700;                
+            }
+            .txt {
+                margin-top: vw(28);
+                font-size: vw(16);
+                line-height: vw(22);
+            }
+        }
+        .tour_btm {
+            padding:vw(16) vw(20);
+            background: #1262ea;
+            .__link {
+                font-size: vw(14);
+                color:#fff;
+                padding-right: vw(22);
+                text-decoration: underline;
+                background: url(../img/ico_link_white.svg) no-repeat 100% 50% / vw(14);
+            }
+            .sns_list {
+                display: flex;
+                align-items: center;
+                position: absolute;
+                right:vw(20);
+                a {
+                    display: inline-block;
+                    padding:vw(6);
+                    img {
+                        width: vw(24);
+                    }
+                }
+            }
+            p {
+                margin-top: vw(15);
+                font-size: vw(10);
+                color:#fff;
+            }
+        }
+        .tour_pro_list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding:vw(34) vw(20) 0;
+            li {
+                position: relative;
+                width: 48%;
+                margin-top: vw(15);
+                img {
+                    width: 100%;
+                }
+                &::before {
+                    z-index: 1;
+                    position: absolute;
+                    left: 0;
+                    top:0;
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 22.48%);
+                }
+                &:nth-child(-n + 2) {
+                    margin-top: 0;
+                }
+                button {
+                    position: absolute;
+                    right:vw(10);
+                    top:vw(10);
+                    width: vw(22);
+                    height: vw(22);
+                    border-radius: 100%;
+                    z-index: 2;
+                    background: rgba(29, 29, 29, 0.35) url(../img/ico_share.svg) no-repeat 50% 50% / vw(14);
+                    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+                }
+                .txt_box {
+                    position: absolute;
+                    bottom: vw(10);
+                    left:0;
+                    z-index: 2;
+                    padding-left: vw(13);
+                    font-size: vw(14);
+                    .p_name {
+                        font-weight: 600;                        
+                        margin-bottom: vw(2);
+                    }
+                    .p_price {
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &.__more {
+                width: vw(116);
+                height: vw(24);
+                margin: vw(43) auto;
+                border: 1px solid #C4C4C4;
+                color: #C4C4C4;
+                font-size: vw(12);
+            }
+        }
+    }
 }
