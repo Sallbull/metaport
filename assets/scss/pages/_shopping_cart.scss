@@ -42,37 +42,7 @@
                         font-weight: 400;
                         .p_name {
                             font-weight: 700;
-                        }
-                        .plus_minus {
-                            margin:15px 0;
-                            display: flex;
-                            button {
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                text-align: center;
-                                width: 27px;
-                                height: 27px;
-                                background: rgba(245, 245, 245, .8);
-                                &.__minus {
-                                    background: rgba(245, 245, 245, .8) url(../img/ico_minus.svg) no-repeat 50% 50% / 6px;
-                                }
-                                &.__plus {
-                                background: rgba(245, 245, 245, .8) url(../img/ico_plus.svg) no-repeat 50% 50% / 8px;
-                                }
-                            }
-                            input {
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                text-align: center;
-                                font-weight: 600;
-                                width: 27px;
-                                height: 27px;
-                                border: 1px solid rgba(18, 98, 234,.8);
-                            }
-
-                        }
+                        }                        
                         .__option {
                             color:#1d1d1d;
                             text-decoration: underline;
@@ -160,36 +130,7 @@
                         .p_name {
                             font-weight: 700;
                         }
-                        .plus_minus {
-                            margin:15px 0;
-                            display: flex;
-                            button {
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                text-align: center;
-                                width: 27px;
-                                height: 27px;
-                                background: rgba(245, 245, 245, .8);
-                                &.__minus {
-                                    background: rgba(245, 245, 245, .8) url(../img/ico_minus.svg) no-repeat 50% 50% / 6px;
-                                }
-                                &.__plus {
-                                background: rgba(245, 245, 245, .8) url(../img/ico_plus.svg) no-repeat 50% 50% / 8px;
-                                }
-                            }
-                            input {
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                text-align: center;
-                                font-weight: 600;
-                                width: 27px;
-                                height: 27px;
-                                border: 1px solid rgba(18, 98, 234,.8);
-                            }
-
-                        }
+                        
                         .__option {
                             color:#1d1d1d;
                             text-decoration: underline;

@@ -6,9 +6,9 @@
 @import 'base/font';
 @import 'vendors/swiper';
 
-@import 'header';
+@import 'layout/header';
 @import 'layout/sidebar';
-@import 'footer';
+@import 'layout/footer';
 @import 'layout/layout';
 
 @import 'pages/main';
@@ -21,7 +21,19 @@
 @import 'pages/form';
 @import 'pages/tour';
 
-
+.bg_dimmed {
+	display: none;
+	position: fixed;
+	left: 0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(29, 29, 29, 0.25);
+	z-index: 100;
+	&.on {
+		display: block;
+	}
+}
 /* common */
 select.select {
 	// padding: 5px 20px 5px 10px;

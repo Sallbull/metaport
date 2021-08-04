@@ -2,7 +2,13 @@
     .sub {
         .__customer {
             width: 1060;
-            margin:121px auto;            
+            margin:121px auto;    
+            .pc_list {
+                display: block;
+            }    
+            .mobile_list {
+                display: none;
+            }    
         }
     }
 }
@@ -12,7 +18,64 @@
         .__customer {
             width: 100%;
             padding:0 vw(20);
-            margin:vw(50) auto;            
+            margin:vw(50) auto;
+            .pc_list {
+                display: none;
+            }
+            .mobile_list {
+                display: block;
+                li {
+                    padding:vw(24) vw(16);
+                    font-size: vw(14);
+                    color:#1d1d1d;
+                    border-bottom: 1px solid rgba(163,163,163,.8);
+                    &:last-child {
+                        border-bottom: 0 solid #000;
+                    }
+                    .no {
+                        font-size: vw(14);
+                        color:#a3a3a3;
+                        margin-bottom: vw(8);
+                    }
+                    .product_box {
+                        padding-left: vw(112);
+                        position: relative;
+                        img {
+                            position: absolute;
+                            left:0;
+                            top:0;
+                            width: vw(72);
+                            width: height(72);
+                            aspect-ratio: 1/1;
+                        }
+                        p {
+                            margin-bottom: 8px;
+                        }
+                        .p1 {                            
+                            font-weight: 700;
+                            
+                        }
+                        .p3 {
+                            margin-bottom: 0;
+                        }
+                    }
+                    .btm_txt {
+                        margin-top: vw(15)
+;                        display: flex;
+                        justify-content: space-between;
+                        span {       
+                            display: block;
+                            text-align: center;                     
+                            width: vw(72);
+                            color:#a3a3a3;
+                            &.date {
+                                width: auto;
+                                color:#1d1d1d;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

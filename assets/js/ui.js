@@ -148,6 +148,39 @@ $(function () {
         $('.bg-dimmed').show();
     }
 
+    $('.__exhibition_hall .__delete').on('click',function(){
+        $('.bg_dimmed').addClass('on');
+        $('.__pop').addClass('on');
+    });
+    $('.__pop .btn_wrap .btn').on('click',function(){
+        $(this).closest('.__pop').removeClass('on')
+        $('.bg_dimmed').removeClass('on');
+    });
+    $('.__pop .closed_pop').on('click',function(){
+        $(this).closest('.__pop').removeClass('on')
+        $('.bg_dimmed').removeClass('on');
+    });
+
+    $('.__zoom').on('click',function(){
+        $('.__zoom_pop').addClass('on');
+    });
+
+    $('.plus_minus .btn').on('click',function(){
+        var tg = $(this).closest('.plus_minus').find('input');
+        var count = Number(tg.val());
+        if ( $(this).hasClass('__minus') )  {
+            if (count > 0) {
+                count--;
+                tg.val(count);
+            }            
+        } else if ( $(this).hasClass('__plus') ) {
+            count++;
+            tg.val(count);
+        }
+    });
+    $('.__metterport').on('click',function(){
+        $('.__cart_pop').addClass('on');
+    }); 
 });
 
 
