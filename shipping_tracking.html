@@ -1,0 +1,74 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("header.html");  //헤더 인클루드
+        $("#footers").load("footer.html");  //푸터부분 인클루드
+    });
+</script>
+
+<div data-include-path="header.html" id="headers"></div>
+
+<main class="sub">
+    <section class="__top">
+        <h1>배송조회하기</h1>
+    </section>
+    <section class="__cont __tracking">
+        <ul class="product_list">
+            <li>
+                <img src="assets/img/@img_cart_01.png" alt="">
+                <div class="text_box">
+                    <p class="t1">하이네켄 케이스, 1개</p>
+                    <p class="t2"><span>송장번호</span> <b>10293322323</b></p>
+                </div>
+            </li>
+        </ul>
+        <ul class="order_list">
+            <li>
+                <span>이름</span>
+                <b>이성암</b>
+            </li>
+            <li>
+                <span>전화번호</span>
+                <b>010-9922-3157</b>
+            </li>
+            <li>
+                <span>이메일</span>
+                <b>sallbull@gmail.com</b>
+            </li>
+            <li>
+                <span>주소</span>
+                <b>서울시 마포구 한남동 182-22</b>
+            </li>
+        </ul>
+        <div class="card">
+            <table class="tbl">
+                <colgroup>
+                    <col style="width: 15%;">
+                    <col style="width: auto;">
+                    <col style="width: 20%;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>상품비용</th>
+                        <th>현재위치</th>
+                        <th>배송상태</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2021.07.18 20:01</td>
+                        <td>일산8(경기김포시)</td>
+                        <td>캠프도착</td>
+                    </tr>
+                    <tr>
+                        <td>2021.07.18 20:01</td>
+                        <td>일산8(경기김포시)</td>
+                        <td>캠프도착</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</main>
+
+<div data-include-path="footer.html" id="footers"></div>

@@ -1,0 +1,229 @@
+@include desktop {
+    .__refund {
+        width: 994px;
+        margin:120px auto 81px;
+        h2 {
+            font-size: 22px;
+            font-weight: 700;
+            color:#1d1d1d;
+            margin-bottom: 30px;
+        }
+        .cont_wrap {
+            border-bottom: 1px solid #e5e5e5;
+            padding-bottom: 47.5px;
+            &.__01 {
+                padding-top: 0;
+                .radio_wrap {
+                    li {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 23px;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+            &.__02 {
+                padding-top: 78.5px;
+                .cancel_list {
+                    li {
+                        display: flex;
+                        .text_box {
+                            margin-left: 16px;
+                            font-weight: 700;
+                            .t1 {
+                                font-size: 14px;
+                                margin-bottom: 9px;
+                            }
+                            .t2 {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+            &.__03  {
+                padding-top: 59.5px;
+                .order_list {
+                    font-size: 14px;
+                    margin-bottom: 63px;
+                    li {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 16px;
+                        span {
+                            color:#a3a3a3;
+                            font-weight: 700;
+                            width: 126px;
+                        }
+                        b {
+                            font-weight: 400;
+                            color:#1d1d1d;
+                        }
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+                
+                .total_price {
+                    font-size: 22px;
+                    font-weight: 700;
+                    color:#1d1d1d;
+                    b {
+                        margin-right:35px;
+                    }
+                }
+            }
+            &.__04 {
+                padding-top: 30px;
+                border-bottom: 0 solid #000;
+                .txt {
+                    font-size: 14px;
+                    color:#1d1d1d;
+                    margin-bottom: 16px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    span {
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            font-weight: 700;
+            height: 48px;
+            border-radius: 3px;
+            &.btn_payment {
+                margin:63.5px auto 0;
+                width: 224px;
+                background: #1d1d1d;
+                color:#fff;
+            }
+        }
+
+    }
+}
+
+@include mobile {
+    .__refund {
+        width: 100%;
+        margin:vw(40) auto;
+        padding:0 vw(20);
+        h2 {
+            font-size: vw(22);
+            font-weight: 700;
+            color:#1d1d1d;
+            margin-bottom: vw(20);
+        }
+        .cont_wrap {
+            border-bottom: 1px solid #e5e5e5;
+            padding-bottom: vw(20);
+            &.__01 {
+                padding-top: 0;
+                .radio_wrap {
+                    li {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: vw(23);
+                        label {
+                            font-size: vw(14);
+                        }
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+            &.__02 {
+                padding-top: vw(40);
+                .cancel_list {
+                    li {
+                        display: flex;
+                        .text_box {
+                            margin-left: vw(16);
+                            font-weight: 700;
+                            .t1 {
+                                font-size: vw(14);
+                                margin-bottom: vw(9);
+                            }
+                            .t2 {
+                                font-size: vw(16);
+                            }
+                        }
+                    }
+                }
+            }
+            &.__03  {
+                padding-top: vw(40);
+                .order_list {
+                    font-size: vw(14);
+                    margin-bottom: vw(63);
+                    li {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: vw(16);
+                        span {
+                            color:#a3a3a3;
+                            font-weight: 700;
+                            width: vw(126);
+                        }
+                        b {
+                            font-weight: 400;
+                            color:#1d1d1d;
+                        }
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+                
+                .total_price {
+                    font-size: vw(22);
+                    font-weight: 700;
+                    color:#1d1d1d;
+                    b {
+                        margin-right:vw(35);
+                    }
+                }
+            }
+            &.__04 {
+                padding-top: vw(30);
+                border-bottom: 0 solid #000;
+                .txt {
+                    font-size: vw(14);
+                    color:#1d1d1d;
+                    margin-bottom: vw(16);
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    span {
+                        margin-right: vw(20);
+                    }
+                }
+            }
+        }
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: vw(14);
+            font-weight: 700;
+            height: vw(48);
+            border-radius: 3px;
+            &.btn_payment {
+                margin:vw(63.5) auto 0;
+                width: vw(224);
+                background: #1d1d1d;
+                color:#fff;
+            }
+        }
+
+    }
+}

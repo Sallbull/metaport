@@ -1,0 +1,69 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("header.html");  //헤더 인클루드
+        $("#footers").load("footer.html");  //푸터부분 인클루드
+    });
+</script>
+
+<div data-include-path="header.html" id="headers"></div>
+
+<main class="sub">
+    <section class="__top">
+        <h1>환불신청하기</h1>
+    </section>
+    <section class="__cont __refund">
+        <div class="cont_wrap __01">
+            <h2>취소 사유를 선택해주세요</h2>
+            <ul class="radio_wrap">
+                <li>
+                    <input type="radio" name="r1" class="radio" id="r1">
+                    <label for="r1">다른 상품 추가 후 재주문 예정</label>
+                </li>
+                <li>
+                    <input type="radio" name="r1" class="radio" id="r2">
+                    <label for="r2">상품이 마음에 들지 않음</label>
+                </li>
+            </ul>
+        </div>
+        <div class="cont_wrap __02">
+            <h2>취소 상품</h2>
+            
+            <ul class="cancel_list">
+                <li>
+                    <img src="assets/img/@img_cart_01.png" alt="">
+                    <div class="text_box">
+                        <p class="t1">하이네켄 케이스, 1개</p>
+                        <p class="t2">280,000 원</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="cont_wrap __03">
+            <h2>환불정보</h2>
+            <ul class="order_list">
+                <li>
+                    <span>주문합계금액</span>
+                    <b>17,223원</b>
+                </li>
+                <li>
+                    <span>배송비</span>
+                    <b>2,500원</b>
+                </li>
+            </ul>
+            <div class="total_price">
+                <b>총 환불예상금액</b>
+                <span>18,223원</span>
+            </div>
+        </div>
+        <div class="cont_wrap __04">
+            <p class="txt"><span>환불 예정일</span> 평일 3 ~ 7일 이내</p>
+            <p class="txt"><span>환불 수단</span> 신용카드 / 체크카드</p>
+        </div>
+        
+        <button class="btn btn_payment">환불신청</button>
+        
+    </section>
+</main>
+
+<div data-include-path="footer.html" id="footers"></div>

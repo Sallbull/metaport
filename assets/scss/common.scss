@@ -20,6 +20,10 @@
 @import 'pages/faq';
 @import 'pages/form';
 @import 'pages/tour';
+@import 'pages/payment';
+@import 'pages/refund';
+@import 'pages/tracking';
+@import 'pages/order';
 
 .bg_dimmed {
 	display: none;
@@ -159,11 +163,11 @@ input[type="password"].input {
 }
 .radio {
 	display: inline-flex;
-	width: px(11);
-	height: px(11);
+	width: vw(24);
+	height: vw(24);
 	background: url( #{$url}/ico_radio.svg ) no-repeat 50% 50% / 99%;
 	border: 0 solid #000;
-	margin-right: px(6);
+	margin-right: vw(8);
 	&:checked {
 		background: url( #{$url}/ico_radio_on.svg ) no-repeat 50% 50% / 99%;
 	}
@@ -309,11 +313,11 @@ body.__open {
 	}
 	.radio {
 		display: inline-flex;
-		width: px(11);
-		height: px(11);
+		width: 24px;
+		height: 24px;
 		background: url( #{$url}/ico_radio.svg ) no-repeat 50% 50% / 99%;
 		border: 0 solid #000;
-		margin-right: px(6);
+		margin-right: 8px;
 		&:checked {
 			background: url( #{$url}/ico_radio_on.svg ) no-repeat 50% 50% / 99%;
 		}

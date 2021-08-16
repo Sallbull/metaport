@@ -1,0 +1,91 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("header.html");  //헤더 인클루드
+        $("#footers").load("footer.html");  //푸터부분 인클루드
+    });
+</script>
+
+<div data-include-path="header.html" id="headers"></div>
+
+<main class="sub">
+    <section class="__top">
+        <h1>주문 / 결제</h1>
+    </section>
+    <section class="__cont __payment">
+        <div class="cont_wrap __01">
+            <h2>주문하시는 분</h2>
+            <ul class="order_list">
+                <li>
+                    <span>이름</span>
+                    <b>이성암</b>
+                </li>
+                <li>
+                    <span>전화번호</span>
+                    <b>010-9922-3176</b>
+                </li>
+                <li>
+                    <span>이메일</span>
+                    <b>sallbull@gmail.com</b>
+                </li>
+            </ul>
+        </div>
+        <div class="cont_wrap __02">
+            <h2>배송정보</h2>
+            <ul class="radio_wrap">
+                <li>
+                    <input type="radio" name="r1" class="radio" id="r1">
+                    <label for="r1">기본배송지</label>
+                </li>
+                <li>
+                    <input type="radio" name="r1" class="radio" id="r2">
+                    <label for="r2">신규배송지</label>
+                </li>
+            </ul>
+            <ul class="delivery_list">
+                <li>
+                    <input type="text" class="input">
+                    <button class="btn btn_address">우편번호찾기</button>
+                </li>
+                <li>
+                    <input type="text" class="input" value="서울시 마포구 한남동">
+                </li>
+                <li>
+                    <input type="text" class="input" value="" placeholder="상세주소">
+                </li>
+                <li>
+                    <input type="text" class="input" value="010-9922-3157">
+                </li>
+            </ul>
+        </div>
+        <div class="cont_wrap __03">
+            <ul class="order_list">
+                <li>
+                    <span>주문합계금액</span>
+                    <b>17,223원</b>
+                </li>
+                <li>
+                    <span>배송비</span>
+                    <b>2,500원</b>
+                </li>
+            </ul>
+            <div class="total_price">
+                <b>총 환불예상금액</b>
+                <span>18,223원</span>
+            </div>
+        </div>
+        <div class="cont_wrap __04">
+            <h2>결제수단</h2>
+            <div class="btn_wrap">
+                <button class="btn" type="button">무통장입금</button>
+                <button class="btn" type="button">신용카드</button>
+                <button class="btn" type="button">계좌이체</button>
+            </div>
+        </div>
+        
+        <button class="btn btn_payment">결제하기</button>
+        
+    </section>
+</main>
+
+<div data-include-path="footer.html" id="footers"></div>
