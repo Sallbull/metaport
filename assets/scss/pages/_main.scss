@@ -229,9 +229,11 @@
                     line-height: vw(44);
                 }
                 .t2 {
-                    margin-top: vw(12);
-                    font-size: vw(20);
+                    margin: vw(12) auto 0;
+                    font-size: vw(18);
                     line-height: vw(27);
+                    width: 90%;
+
                 }
             }
         }

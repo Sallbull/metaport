@@ -2006,9 +2006,10 @@ button.swiper-pagination-bullet {
     line-height: 10.62802vw;
   }
   .main .__top .txt_box .t2 {
-    margin-top: 2.89855vw;
-    font-size: 4.83092vw;
+    margin: 2.89855vw auto 0;
+    font-size: 4.34783vw;
     line-height: 6.52174vw;
+    width: 90%;
   }
   .main .__cont {
     padding: 17.8744vw 0;
