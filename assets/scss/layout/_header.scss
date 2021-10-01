@@ -1,6 +1,6 @@
 @include desktop {
     .header {
-        background-color: #1d1d1d;
+        background-color: #ccc;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -22,7 +22,11 @@
         }
         .logo {
             font-size: 29px;
-            font-weight: 700;                        
+            font-weight: 700;
+            width: 200px;
+            img {
+                width: 100%;
+            }
         }
         nav {
             .__menu {
@@ -92,7 +96,7 @@
 
 @include mobile {
    .header {
-        background-color: #1d1d1d;
+        background-color: #ccc;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -114,7 +118,11 @@
         }
         .logo {
             font-size: vw(20);
-            font-weight: 700;                        
+            font-weight: 700;   
+            width: vw(100);
+            img {
+                width: 100%;
+            }                     
         }
         nav {
             display: flex;

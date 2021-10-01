@@ -780,7 +780,7 @@ button.swiper-pagination-bullet {
 
 @media (min-width: 1200px) {
   .header {
-    background-color: #1d1d1d;
+    background-color: #ccc;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -811,6 +811,10 @@ button.swiper-pagination-bullet {
   .header .logo {
     font-size: 29px;
     font-weight: 700;
+    width: 200px;
+  }
+  .header .logo img {
+    width: 100%;
   }
   .header nav .__menu {
     display: inline-block;
@@ -887,7 +891,7 @@ button.swiper-pagination-bullet {
 
 @media (max-width: 1199px) {
   .header {
-    background-color: #1d1d1d;
+    background-color: #ccc;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -918,6 +922,10 @@ button.swiper-pagination-bullet {
   .header .logo {
     font-size: 4.83092vw;
     font-weight: 700;
+    width: 24.15459vw;
+  }
+  .header .logo img {
+    width: 100%;
   }
   .header nav {
     display: -webkit-box;
@@ -974,7 +982,7 @@ button.swiper-pagination-bullet {
 
 @media (min-width: 1200px) {
   footer {
-    background-color: #f5f5f5;
+    background-color: #ccc;
   }
   footer .inner_mobile {
     display: none;
@@ -987,6 +995,10 @@ button.swiper-pagination-bullet {
   footer .inner_pc .footer_logo {
     font-size: 20px;
     font-weight: 700;
+    width: 200px;
+  }
+  footer .inner_pc .footer_logo img {
+    width: 100%;
   }
   footer .inner_pc > div {
     display: -webkit-box;
@@ -1002,10 +1014,11 @@ button.swiper-pagination-bullet {
   }
   footer .inner_pc > div dl dt {
     display: inline-block;
-    color: #1262ea;
+    color: #1d1d1d;
+    font-weight: 700;
     padding-right: 12px;
     margin-bottom: 14px;
-    background: url(../img/ico_blue_arrow.svg) no-repeat 100% 50%/4px;
+    background: url(../img/ico_arrow.svg) no-repeat 100% 50%/4px;
   }
   footer .inner_pc > div dl dd {
     display: block;
