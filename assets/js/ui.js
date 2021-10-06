@@ -180,10 +180,5 @@ $(function () {
     });
     $('.__metterport').on('click',function(){
         $('.__cart_pop').addClass('on');
-    }); 
+    });         
 });
-
-
-    
-
-

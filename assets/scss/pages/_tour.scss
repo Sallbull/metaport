@@ -59,7 +59,17 @@
                 }
                 .img_box {
                     position: relative;
-                    
+                    overflow: hidden;
+                    padding-top: 54%;
+                    img {
+                        width: 100%;
+                        position: absolute;
+                        left: 50%;
+                        top:50%;
+                        right:0;
+                        bottom:0;
+                        transform: translate(-50%,-50%);
+                    }
                 }
                 .__zoom {
                     position: absolute;
@@ -125,6 +135,8 @@
                 .t2 {
                     font-size: 16px;
                     margin: 5px 0 20px;
+                    height: 60px;
+                    overflow-y: auto;
                 }
             }
             .__zoom_pop {
@@ -351,7 +363,17 @@
                 }
                 .img_box {
                     position: relative;
-                    
+                    overflow:hidden;
+                    padding-top: 54%;
+                    img {
+                        width: 100%;
+                        position: absolute;
+                        left: 50%;
+                        top:50%;
+                        right:0;
+                        bottom:0;
+                        transform: translate(-50%,-50%);
+                    }
                 }
                 .__zoom {
                     position: absolute;
@@ -417,6 +439,8 @@
                 .t2 {
                     font-size: vw(16);
                     margin: vw(5) 0 vw(20);
+                    height: vw(50);
+                    overflow-y: auto;
                 }
             }
             .__zoom_pop {
