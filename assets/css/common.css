@@ -4328,15 +4328,16 @@ button.swiper-pagination-bullet {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     padding: 33px 40px;
   }
   .tour .tour_pro_list li {
     position: relative;
     width: 218px;
     margin-top: 30px;
+    margin-right: 25px;
+  }
+  .tour .tour_pro_list li:nth-child(5n) {
+    margin-right: 0;
   }
   .tour .tour_pro_list li img {
     width: 100%;

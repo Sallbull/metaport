@@ -230,13 +230,16 @@
         }
         .tour_pro_list {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
+            flex-wrap: wrap;            
             padding:33px 40px;
             li {
                 position: relative;
                 width: 218px;
                 margin-top: 30px;
+                margin-right: 25px;
+                &:nth-child(5n) {
+                    margin-right: 0;
+                }
                 img {
                     width: 100%;
                 }
