@@ -21,6 +21,11 @@
                 margin-top: 18px;
                 dl {
                     margin-right: 140px;
+                    &:first-child {
+                        dt {
+                            display: none;
+                        }
+                    }
                     &:last-child {
                         margin-right: 0;
                     }

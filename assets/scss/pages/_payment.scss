@@ -13,6 +13,12 @@
             padding-bottom: 47.5px;
             &.__01 {
                 padding-bottom: 56.5px;
+                .order_list {
+                    width: 470px;
+                    input {
+                        width: calc(100% - 100px);
+                    }
+                }
                 .order_list span {
                     width: 100px;
                 }
@@ -135,6 +141,12 @@
             padding-bottom: vw(40);
             &.__01 {
                 padding-bottom: vw(30);
+                .order_list {
+                    width: 100%;
+                    .input {
+                        width: calc(100% - 24.15459vw);
+                    }
+                }
                 .order_list span {
                     width: vw(100);
                 }
