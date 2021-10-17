@@ -121,7 +121,22 @@
                 color:#fff;
             }
         }
-
+        .cont_result {
+            font-size: 18px;
+            text-align: center;
+            .text_box {
+                background-color: #eee;
+                width: 50%;
+                margin:20px auto;
+                padding:20px 0;
+            }
+            .t2 {
+                font-weight: bold;
+                b {
+                    color:red;
+                }
+            }
+        }
     }
 }
 
@@ -248,6 +263,23 @@
                 width: vw(224);
                 background: #1d1d1d;
                 color:#fff;
+            }
+        }
+
+        .cont_result {
+            font-size: vw(14);
+            text-align: center;
+            .text_box {
+                background-color: #eee;
+                width: 80%;
+                margin:vw(20) auto;
+                padding:vw(20) 0;
+            }
+            .t2 {
+                font-weight: bold;
+                b {
+                    color:red;
+                }
             }
         }
 

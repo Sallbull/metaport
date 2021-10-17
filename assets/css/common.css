@@ -4903,6 +4903,22 @@ button.swiper-pagination-bullet {
     background: #1d1d1d;
     color: #fff;
   }
+  .__payment .cont_result {
+    font-size: 18px;
+    text-align: center;
+  }
+  .__payment .cont_result .text_box {
+    background-color: #eee;
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px 0;
+  }
+  .__payment .cont_result .t2 {
+    font-weight: bold;
+  }
+  .__payment .cont_result .t2 b {
+    color: red;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -5046,6 +5062,22 @@ button.swiper-pagination-bullet {
     width: 54.10628vw;
     background: #1d1d1d;
     color: #fff;
+  }
+  .__payment .cont_result {
+    font-size: 3.38164vw;
+    text-align: center;
+  }
+  .__payment .cont_result .text_box {
+    background-color: #eee;
+    width: 80%;
+    margin: 4.83092vw auto;
+    padding: 4.83092vw 0;
+  }
+  .__payment .cont_result .t2 {
+    font-weight: bold;
+  }
+  .__payment .cont_result .t2 b {
+    color: red;
   }
 }
 

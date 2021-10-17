@@ -1,0 +1,28 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+    $(document).ready( function() {
+        $("#headers").load("header.html");  //헤더 인클루드
+        $("#footers").load("footer.html");  //푸터부분 인클루드
+    });
+</script>
+
+<div data-include-path="header.html" id="headers"></div>
+
+<main class="sub">
+    <section class="__top">
+        <h1>주문 완료</h1>
+    </section>
+    <section class="__cont __payment">
+        <div class="cont_result">
+            <p class="t1">상품이 품절될 수 있습니다.</p>
+            <p class="t1">입금을 서둘러 주세요!</p>
+            <dl class="text_box">
+                <dt>국민은행 2123901359084</dt>
+                <dd>13,880원</dd>
+            </dl>
+            <p class="t2"><b>내일 ( 10/17 ) 16:47분</b> 까지 미입금시 취소</p>
+        </div>
+    </section>
+</main>
+
+<div data-include-path="footer.html" id="footers"></div>
