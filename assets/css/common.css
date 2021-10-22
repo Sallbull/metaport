@@ -5610,6 +5610,89 @@ button.swiper-pagination-bullet {
   }
 }
 
+@media (min-width: 1200px) {
+  .sub .__terms {
+    width: 1060px;
+    margin: 121px auto;
+    font-size: 18px;
+  }
+  .sub .__terms h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+  .sub .__terms p {
+    margin-bottom: 20px;
+  }
+  .sub .__terms .tit {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .sub .__terms table {
+    table-layout: fixed;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+  }
+  .sub .__terms table th {
+    padding: 5px 0;
+    border: 1px solid #ccc;
+    text-align: center;
+    background-color: #eee;
+  }
+  .sub .__terms table td {
+    border: 1px solid #ccc;
+    text-align: left;
+    padding: 5px 10px;
+    vertical-align: middle;
+  }
+}
+
+@media (max-width: 1199px) {
+  .sub .__terms {
+    width: 100%;
+    padding: 0 4.83092vw;
+    margin: 12.07729vw auto;
+    font-size: 3.38164vw;
+  }
+  .sub .__terms h2 {
+    text-align: center;
+    font-size: 4.83092vw;
+    font-weight: 700;
+    margin-bottom: 7.24638vw;
+  }
+  .sub .__terms p {
+    margin-bottom: 3.62319vw;
+  }
+  .sub .__terms .tit {
+    font-weight: 700;
+    font-size: 3.86473vw;
+    margin-bottom: 3.62319vw;
+  }
+  .sub .__terms table {
+    table-layout: fixed;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin-bottom: 4.83092vw;
+  }
+  .sub .__terms table th {
+    padding: 5px 0;
+    border: 1px solid #ccc;
+    text-align: center;
+    background-color: #eee;
+  }
+  .sub .__terms table td {
+    border: 1px solid #ccc;
+    text-align: left;
+    padding: 5px 10px;
+    vertical-align: middle;
+  }
+}
+
 .bg_dimmed {
   display: none;
   position: fixed;

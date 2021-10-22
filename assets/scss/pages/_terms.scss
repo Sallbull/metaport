@@ -1,0 +1,87 @@
+@include desktop {
+    .sub {
+        .__terms {
+            width: 1060px;
+            margin:121px auto;
+            font-size: 18px;
+            h2 {
+                text-align: center;
+                font-size: 36px;
+                font-weight: 700;
+                margin-bottom: 50px;
+            }
+            p {
+                margin-bottom: 20px;
+            }
+            .tit {
+                font-weight: 700;
+                font-size: 24px;
+                margin-bottom: 30px;
+            }
+            table {
+                table-layout: fixed;
+                width: 100%;
+                border: 1px solid #ccc;
+                border-collapse: collapse;
+                margin-bottom: 30px;
+                th {
+                    padding:5px 0;
+                    border: 1px solid #ccc;
+                    text-align: center;
+                    background-color: #eee;
+                }
+                td {
+                    border: 1px solid #ccc;
+                    text-align: left;
+                    padding:5px 10px;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}
+
+@include mobile {
+    .sub {
+        .__terms {
+            width: 100%;
+            padding:0 vw(20);
+            margin:vw(50) auto;
+            font-size: vw(14);
+            h2 {
+                text-align: center;
+                font-size: vw(20);
+                font-weight: 700;
+                margin-bottom: vw(30);
+            }
+            p {
+                margin-bottom: vw(15)
+            }
+            .tit {
+                font-weight: 700;
+                font-size: vw(16);
+                margin-bottom: vw(15);
+            }
+            table {
+                table-layout: fixed;
+                width: 100%;
+                border: 1px solid #ccc;
+                border-collapse: collapse;
+                margin-bottom: vw(20);
+                th {
+                    padding:5px 0;
+                    border: 1px solid #ccc;
+                    text-align: center;
+                    background-color: #eee;
+                }
+                td {
+                    border: 1px solid #ccc;
+                    text-align: left;
+                    padding:5px 10px;
+                    vertical-align: middle;
+                }
+            }
+            
+        }
+    }
+}
